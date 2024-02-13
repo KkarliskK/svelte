@@ -7,4 +7,12 @@ describe("BirthdayForm", () => {
         render(BirthdayForm);
         expect(screen.queryByRole("form")).toBeVisible();
     });
+
+    it("has a method post", () => {
+        render(BirthdayForm);
+        expect(screen
+            .queryAllByRole("form")
+            .getAttributes("method"))
+        .toBe('post');
+    });
 });

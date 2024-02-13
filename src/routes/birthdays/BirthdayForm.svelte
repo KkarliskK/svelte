@@ -1,1 +1,3 @@
-<form name="birthday-form"></form>
+<form name="birthday-form" method="post">
+    
+</form>
